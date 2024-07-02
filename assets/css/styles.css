@@ -1,16 +1,5 @@
-/* body {
+body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-} */
-/* container for questions */
-#trivia-container {
-    text-align: center;
-    max-width: 800px;
 }
 
 /* Styling for legend buttons */
@@ -20,6 +9,8 @@
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 20px;
 }
 /* button styling */
 
@@ -33,12 +24,7 @@
     border-radius: 5px;
     width: 140px; /* Set a fixed width for consistency */
     height: 80px; 
-    
-    /* Set a fixed height for all buttons */
-    white-space: normal; /
-    /* Allow text to wrap */
-    /* text-align: center;  */
-    /* Center align text */
+
 }
 
 /* Specific background colors for different categories */
