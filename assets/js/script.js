@@ -24,41 +24,34 @@ document.addEventListener("DOMContentLoaded", () => {
             // Fetch trivia questions from the Open Trivia Database API
          
             fetch(`https://opentdb.com/api.php?amount=${amount}&category=${category}&type=multiple`)
-                .then(response => response.json()) // Parse the response as JSON
-                .then(data => {
-                    displayQuestions(data.results); // Call function to display questions
-                })
-                .catch(error => {
-                    console.error('Error fetching trivia questions:', error); // Log any errors to the console
-                });
-        });
+            .then(response => response.json())
+            .then(data => {
+                displayQuestions(data.results);
+            })
+            .catch(error => {
+                console.error('Error fetching trivia questions:', error);
+            });
     });
+});
 
-    // Function to display fetched trivia questions and answer options
-//syntax needs checking as added later    
-    function displayQuestions(questions) {
-        questionsContainer.innerHTML = ''; //
-        //Clear previous questions
-
-        questions.forEach(question => {
-            const questionElement = document.createElement('div');
-            questionElement.classList.add('question'); // Add 'question' class for styling
-         
-            // Populate the question div with question text and answer options
-         
-            questionElement.innerHTML = `
-                <h3>${question.category}</h3>
-                <p>${question.question}</p>
-                <form class="answers">
+function displayQuestions(questions) {
+    questionsContainer.innerHTML = '';
+    questions.forEach(question => {
+        const questionElement = document.createElement('div');
+        questionElement.classList.add('question');
+        questionElement.innerHTML = `
+            <h3>${question.category}</h3>
+            <p>${question.question}</p>
+            <form class="answers">
                 ${shuffle([...question.incorrect_answers, question.correct_answer]).map(answer => `
-                </label>
-                <input type="radio" name="answer" value="${answer}">
-                 ${answer}
-                 </label>
-                    `).join('')}
-                    <button type="submit">Submit Answer</button>
-                </form>
-            `;
+                    <label>
+                        <input type="radio" name="answer" value="${answer}">
+                        ${answer}
+                    </label>
+                `).join('')}
+                <button type="submit">Submit Answer</button>
+            </form>
+        `;
             //Append the question div to the container
 
             questionsContainer.appendChild(questionElement); // 
@@ -89,3 +82,10 @@ document.addEventListener("DOMContentLoaded", () => {
         modal.style.display = "none";
     });
 })
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+};
