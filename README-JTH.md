@@ -20,7 +20,7 @@
 Welcome to Java The Hutt, a website designed to allow users to play a trivia board game! The aim of this project is to create a fully functioning web application (also mobile friendly) board game.
 
 This website was created during Hackathon 2 of the "16 week High-Performance Full Stack Skills Bootcamp" which ranged from 02/07/24 - 04/07/24 (1:30pm). We werent allowed to do any coding until 9am on 02/07/24, however we
-were allowed to explore ideas and get together as a team to discuss what it is we wanted to create. Which was done on the friday and weekend leading into the hackathon (28/06/24 - 01/07/24).
+were allowed to explore ideas and get together as a team to discuss what it is we wanted to create. Which was done on the friday and weekend leading into the hackathon (28/06/24 - 01/07/24).**click here for the pdf link file**
 
 <a id="instructions"></a>
 ## Instructions and Features
