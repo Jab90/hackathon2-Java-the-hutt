@@ -91,24 +91,24 @@ function shuffle(array) {
 };
 
 /**
- * Js ffor the spinner wheel
+ * Js for the spinner wheel
  */
-document.addEventListener("DOMContentLoaded", () => {
-    const spinner = document.getElementById("spinner");
-    const spinButton = document.getElementById("spin-button");
-    const sections = document.querySelectorAll(".section");
-    const sectionCount = sections.length;
-    const anglePerSection = 360 / sectionCount;
+let currentRotation = 0;
 
-    spinButton.addEventListener("click", () => {
-        const randomDegree = Math.floor(Math.random() * 360) + 720; // Ensure at least two full spins
-        spinner.style.transform = `rotate(${randomDegree}deg)`;
+function spinWheel() {
+  const wheel = document.getElementById('wheel');
 
-        setTimeout(() => {
-            const actualDegree = randomDegree % 360;
-            const selectedSectionIndex = Math.floor((actualDegree + anglePerSection / 2) / anglePerSection) % sectionCount;
-            const selectedCategory = sections[selectedSectionIndex].dataset.category;
-            alert(`Selected Category: ${selectedCategory}`);
-        }, 4000); // Match the transition duration
-    });
-});
+  // Generate a random rotation angle between 1080 (3 rotations) and 1440 (4 rotations)
+  const randomRotation = 1080 + Math.floor(Math.random() * 360);
+  currentRotation += randomRotation;
+
+  wheel.style.transition = 'transform 3s ease-out';
+  wheel.style.transform = `rotate(${currentRotation}deg)`;
+
+  // Reset rotation after spinning
+  setTimeout(() => {
+    wheel.style.transition = 'none';
+    wheel.style.transform = `rotate(${currentRotation % 360}deg)`;
+    currentRotation = currentRotation % 360;
+  }, 3000);
+}
