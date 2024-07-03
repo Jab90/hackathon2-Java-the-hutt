@@ -64,6 +64,7 @@ function displayQuestions(questions) {
                     const answerText = selectedAnswer.value;
                     const correctAnswer = question.correct_answer;
                     showFeedback(answerText === correctAnswer); // Show feedback based on the selected answer
+                   
                 }
             });
         });
@@ -74,6 +75,8 @@ function displayQuestions(questions) {
     function showFeedback(isCorrect) {
         modalText.textContent = isCorrect ? "Congratulations! What a smart arse!!" : "Noooooooo!! I think somebody needs to go back to school!";
         modal.style.display = "block"; // Display the modal
+      
+
     }
 
     // Close the modal when the close button or outside modal area is clicked. this needs adding to fo functionality whilst gameplaying
@@ -89,3 +92,16 @@ function shuffle(array) {
     }
     return array;
 };
+
+/**
+ * 
+ */
+function IncrementScore() {
+    let oldScore = parseInt (document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+}
+
+function IncrementWrongAnswer() {
+    let oldScore = parseInt (document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldScore;
+}

@@ -20,7 +20,7 @@
 Welcome to Java The Hutt, a website designed to allow users to play a trivia board game! The aim of this project is to create a fully functioning web application (also mobile friendly) board game.
 
 This website was created during Hackathon 2 of the "16 week High-Performance Full Stack Skills Bootcamp" which ranged from 02/07/24 - 04/07/24 (1:30pm). We werent allowed to do any coding until 9am on 02/07/24, however we
-were allowed to explore ideas and get together as a team to discuss what it is we wanted to create. Which was done on the friday and weekend leading into the hackathon (28/06/24 - 01/07/24).
+were allowed to explore ideas and get together as a team to discuss what it is we wanted to create. Which was done on the friday and weekend leading into the hackathon (28/06/24 - 01/07/24).**click here for the pdf link file**
 
 <a id="instructions"></a>
 ## Instructions and Features
@@ -45,11 +45,13 @@ Desktop view of device security only (to avoid screenshot overload):
 
 ### Header & Navigation bar
 
-The header contains a brand piece of text that appears on all pages aligned to the left and links to the home page as per convention. The right-sided navigation bar is designed to be responsive at all screen sizes. The links used are descriptive and necessarily long for user-friendliness. Given the length of the topic names, a link called "Menu" is always present for the user to select hidden options from a dropdown list. This is shown here in mobile view.
+The header contains our brand piece which is a text heading of "Java The Hutt" this is mirrored accross all of our pages used and aligned to the left of the page. The navbar is responsive on small, medium and large screen sizes. So when the screen goes down into the smaller sizes a hamburger menu appears with a drop down.
+
+You can see the differences from the images below: 
 
 ![Navigation bar in mobile view](/assets/images/docs/navbar-mobile.png "Navigation bar in mobile view")
 
-Depending on the size of the screen, some links may be displayed directly on the navigation bar. This can be seen in both laptop and desktop modes below.
+** CHANGE THIS TEXT** Depending on the size of the screen, some links may be displayed directly on the navigation bar. This can be seen in both laptop and desktop modes below.
 
 ![Navigation bar in laptop view](/assets/images/docs/navbar-laptop.png "Navigation bar in laptop view")
 
@@ -57,42 +59,31 @@ Depending on the size of the screen, some links may be displayed directly on the
 
 ### Footer
 
-The footer contains a trademark piece of text and a series of icons that link to (virtual) social media sites. This was implemented to accommodate users who may want to visit the organisation's other online platforms. It is designed to be basic, simplistic and carry the kind of regular content you would expect to see on a modern-day website. The colour scheme matches the nav bar to ensure consistency.
+The footer contains our copyright piece of text and a series of icons which link to our virtual social media sites. This was implemented to accommodate users who may want to see what the organisation is doing online and offline (projects). The design again is basic and simplistic, this as mentioned before is to keep the user engaged and focused on the game. We've kept the colour scheme the same throughout to match the navbar, and to stay congruent across the website.  
 
 ![Footer bar in desktop view](/assets/images/docs/footer-screenshot.png "Footer bar in desktop view")
 
 ### Content pages
 
-The user is able to access content on a variety of online safety topics. These are covered by this website:-
+The user is able to access the game on the first page (Home Page) and will also have access to other pages such as: - 
+- Help me
+- Contact Us
 
-- Password security
-- Email & social media
-- Device security
-- Cyberbullying and harassment
+#### Home Page
 
-Some other concepts are covered by links to other sites in the Menu -> More Information section.
-
-#### Password security
-
-The first password security page has a clean professional style with the content styled clearly, making it easy to read. Images are then used to break up the content, aiding the user in not becoming overwhelmed. It is important to note that the header element and navigation bar are always visible and are fixed to the top of the screen for ease of use.
+The home page you can see is the main star of the show with the board game sitting there. Its quite self explanatory with just playing the game. 
 
 ![Top of password security page](/assets/images/docs/password-security-screenshot.png "Top of password security page")
 
-#### Email & Social Media Security Guide
+#### Help Page 
 
-The second page focusing on email and social media has a slightly different design, with a larger image at the centre before the main content. This design was put in place to separate the page in nature from the others, keeping the user engaged while still keeping to the consistent colour and content structure as the rest of the site.
+The help page has some FAQ's with issues and instructions on how to play the game if you get stuck. This page is designed with just a list of questions that the user may have and instructions to show how to play the game. 
 
 ![Top of email and social media security guide](/assets/images/docs/email-social-page-screenshot.png "Top of email and social media security guide")
 
-#### Other content pages
+#### Contact Us Page 
 
-The rest of the content pages follow a similar ideology. They are different enough to stand out and yet not distract from the general feel of the site. This allows the user to engage in learning the actual content in a refreshing and yet familiar manner.
-
-### More information
-
-This section allows the user to access some external links relating to other forms of cyber security issues that are not covered on this website.
-
-![More info page](/assets/images/docs/moreinfo.png "More info page")
+The contact us page has a form which allows the user to contact us through the website with any issues they are having. Again this webpage follows the same structure as the other pages, whilst staying clear and concise. 
 
 <a id="development"></a>
 ## Development Considerations
