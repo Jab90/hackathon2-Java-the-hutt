@@ -89,3 +89,26 @@ function shuffle(array) {
     }
     return array;
 };
+
+/**
+ * Js ffor the spinner wheel
+ */
+document.addEventListener("DOMContentLoaded", () => {
+    const spinner = document.getElementById("spinner");
+    const spinButton = document.getElementById("spin-button");
+    const sections = document.querySelectorAll(".section");
+    const sectionCount = sections.length;
+    const anglePerSection = 360 / sectionCount;
+
+    spinButton.addEventListener("click", () => {
+        const randomDegree = Math.floor(Math.random() * 360) + 720; // Ensure at least two full spins
+        spinner.style.transform = `rotate(${randomDegree}deg)`;
+
+        setTimeout(() => {
+            const actualDegree = randomDegree % 360;
+            const selectedSectionIndex = Math.floor((actualDegree + anglePerSection / 2) / anglePerSection) % sectionCount;
+            const selectedCategory = sections[selectedSectionIndex].dataset.category;
+            alert(`Selected Category: ${selectedCategory}`);
+        }, 4000); // Match the transition duration
+    });
+});

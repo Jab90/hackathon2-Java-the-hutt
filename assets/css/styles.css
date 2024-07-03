@@ -12,6 +12,7 @@ body {
     margin-top: 50px;
     margin-left: 20px;
 }
+
 /* button styling */
 
 .category-button {
@@ -22,32 +23,42 @@ body {
     color: #fff;
     font-size: 14px;
     border-radius: 5px;
-    width: 140px; /* Set a fixed width for consistency */
-    height: 80px; 
+    width: 140px;
+    /* Set a fixed width for consistency */
+    height: 80px;
 
 }
 
 /* Specific background colors for different categories */
 
 [data-category="11"] {
-    background-color: #f44336; /* Film & Music */
+    background-color: #f44336;
+    /* Film & Music */
 }
 
 [data-category="14"] {
-    background-color: #3f51b5; /* Television */
+    background-color: #3f51b5;
+    /* Television */
 }
 
 [data-category="17"] {
-    background-color: #4caf50; /* Science & Nature */
+    background-color: #4caf50;
+    /* Science & Nature */
 }
+
 [data-category="21"] {
-    background-color: #ff9800; /* Sports */
+    background-color: #ff9800;
+    /* Sports */
 }
+
 [data-category="22"] {
-    background-color: #2196f3; /* Geography */
+    background-color: #2196f3;
+    /* Geography */
 }
+
 [data-category="23"] {
-    background-color: #795548; /* History */
+    background-color: #795548;
+    /* History */
 }
 
 /* Styling for modal */
@@ -109,4 +120,124 @@ body {
 
 .answers input {
     margin-right: 5px;
+}
+
+
+
+
+/* Spinner Container */
+ #spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1260px; /* Allow scaling up to 1260px */
+    position: relative;
+    height: 33vh; /* 1/3 of the page height */
+    
+} */
+
+/* Marker Styling */
+#marker {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid red;
+    z-index: 1;
+}
+
+/* Spinner Styling */
+#spinner {
+    width: 100%;
+    height: 100%;
+    max-width: 240px;
+    max-height: 240px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    aspect-ratio: 1;
+}
+
+/* Section Styling */
+.section {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: 0% 100%;
+}
+
+.section:nth-child(1) {
+    transform: rotate(0deg) skewY(-30deg);
+}
+
+.section:nth-child(2) {
+    transform: rotate(60deg) skewY(-30deg);
+}
+
+.section:nth-child(3) {
+    transform: rotate(120deg) skewY(-30deg);
+}
+
+.section:nth-child(4) {
+    transform: rotate(180deg) skewY(-30deg);
+}
+
+.section:nth-child(5) {
+    transform: rotate(240deg) skewY(-30deg);
+}
+
+.section:nth-child(6) {
+    transform: rotate(300deg) skewY(-30deg);
+}
+
+
+#spin-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Legend Styling */
+#legend-container {
+    text-align: center;
+    margin-top: 20px;
+    max-width: 1260px; 
+}
+
+#legend-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#legend-container li {
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* Responsive Design */
+@media (min-width: 200px) and (max-width: 450px) {
+    #spinner {
+        display: block; /* Show spinner only on small devices */
+    }
+}
+
+@media (min-width: 451px) and (max-width: 1260px) {
+    #spinner {
+        display: block; /* Show spinner on medium and larger devices */
+    }
 }
