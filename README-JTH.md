@@ -77,7 +77,7 @@ The home page you can see is the main star of the show with the board game sitti
 
 #### Help Page 
 
-The help page has some FAQ's with issues and instructions on how to play the game if you get stuck. This page is designed with just a list of questions that the user may have and instructions to show how to play the game. 
+The help page has some FAQ's with issues. This page is designed with just some questions that the user may have. 
 
 ![Top of email and social media security guide](/assets/images/docs/email-social-page-screenshot.png "Top of email and social media security guide")
 
@@ -88,11 +88,15 @@ The contact us page has a form which allows the user to contact us through the w
 <a id="development"></a>
 ## Development Considerations
 
-Upon selection of our chosen topic, we began a process of consideration into how the project might be designed and developed. An initial stage involved considering what categories and content a sequence of pages might contain. After collecting some summarised information from ChatGPT, we collected an exhaustive amount of information before sorting out initial categories and information. The data we collected and sorted through is contained in [initial-categorisation.pdf](/assets/docs/initial-categorisation.pdf)
+Upon choosing the route we wanted to go down in terms of a game and design, we began to throw out ideas on how the project would be designed and developed. The intial stages we considered how to have a different style of game/quiz, but after a few conversations we decided as a team it would be best to keep it simple and not overcomplicate things as we are also aware of the time aspect. 
 
-A project board was set up using GitHub Projects and populated with tasks. As the project progressed, these items were moved from "Todo" to "In Progress" and then to "Completed". A full Agile methodology was not required during this Hackathon and thus the project board was only used in a basic sense for management.
+A project board was set up using GitHub Projects and populated with tasks. As we progressed with the project these items were moved from the "Todo" section into "In Progress" and finally to the "Completed" tab. A full Agile methodolgy was not required during this Hackathon and thus the project board was used for mainly basic sense of management. 
 
-Wireframe ideas for the design were created to give a sense of the kind of interface we were going for. It was made clear during preparation for this Hackathon (being the first one) that most of the focus would be on the coding for the challenge. For this reason, only limited attempts were made on wireframing concepts. A design was drawn up on mobile dimensions and then expanded to show tablet and laptop/desktop layouts. An example illustration of a themed website in colour was then created using this approach.
+Wireframes were used to design and help us come up with ideas and what sort of interface we would be going for. So as the coding aspect was more important (functionality) we thought that going for a more basic design but with a good finished product. Our designs were drawn up just as ideas until we moved over to the final design as we thought it would be easier to manage and code. We did our wireframing mark ups on mobile and desktop versions to get a good understanding as to how the responsiveness would have to be. The final wire frame was added with a little colour just give it a better look on the eye. You will see some of our wire frames attached below: - 
+
+*ADD IMAGES HERE* 
+
+
 
 Some of the wireframe designs are shown below:-
 
@@ -116,23 +120,26 @@ The initial idea for styling was to use a complimentary colour palette like the 
 
 ![Wireframe smartphone page styled](/assets/images/docs/wireframe-smartphone-styled.png "Wireframe smartphone page styled")
 
-An index.html page was created initially with focus on this as a template page. For this reason, the priority was on creating a header, navbar and footer before other content. Later on, it became clear that operational time limits meant that changes were required to the scope. At this point, a separate unlinked template.html file was created and used as a base for other pages. This allowed content to be easily added to the index file and kept template.html for new pages. From here, the site was expanded and populated with content before being styled to a consistent, easy-to-read standard.
+With the intial outlay of the design done we started off with an index.html template page which we could use and replicate across our pages. Firstly coding the header/Navbar and footer, which gave us a base template with what we were going to do. We then kept the theme simple throughout the project as the main focus was to get the board game fully functional and working.
 
 <a id="testing"></a>
 ## Testing
 
-The website was tested in quite a few ways before completion. The following checks were carried out:-
+We tested the website and board game a few ways before completing it just to make sure there was no major errors. The following check were carried out: - 
 
-- Page responsiveness was tested on all pages at mobile, tablet, laptop and desktop sizes
-- All images load as expected.
-- Every HTML and CSS page on the site was checked with the W3C validator. All pages are error free although some have warnings that there wasn't time to solve.
-- All external site links open in a new tab
-- All internal site links work
+- Page responsiveness, this was tested on all pages across mobile, tablet, laptop and desktop sizes.
+- All text necessary loaded as expected.
+- HTML, CSS and JavaScript were all tested with W3C validator and alos JSHint. All pages are error free, however there was a few ES6 erros from JSHint, which is due to them not using const but probably var in their checking systems.
+- All external links open in a new window/tab.
+- All internal links work and are fully funtional.
+- The board game works how it should. 
 
 <a id="future"></a>
 ## Future Wishlist
 
-- Remove all W3C validator warnings on all pages.
+**ADD TO THIS ON COMPLETION**
+
+- Remove all minor validator warnings on all pages.
 - Fix the navigation bar to show more items in desktop view, the current structure was designed for more pages.
 - Add more categories and content to the site.
 - Work on spacing and content separation a bit more. There are areas where it isn't perfect.
@@ -140,16 +147,16 @@ The website was tested in quite a few ways before completion. The following chec
 <a id="deployment"></a>
 ## Project Deployment
 
-The deployed website can be found [here](https://cyberarchitect777.github.io/hackathon1-hackstreetboys-staying-safe-online/)
+The deployed website can be found [here](https://jab90.github.io/hackathon2-Java-the-hutt/)
 
 <a id="team"></a>
 ## Team
 
-The team worked cooperatively to take the project from design to final implementation and testing.
+The team worked tirelessly and came together to create a good board game in the time given, the team members are: -
 
-- Barrie Millar (Team leader) (https://github.com/CyberArchitect777)
-- Jabbeer Jeerooburkhan - (https://github.com/Jab90)
-- Lewis Freeman - (https://github.com/LewF-Dev)
+- Jabbeer Jeerooburkhan - (Team leader)
+- Steven Poole
+- John Hookes
 
 <a id="technical"></a>
 ## Technical Facts
@@ -160,6 +167,7 @@ The team worked cooperatively to take the project from design to final implement
 - CSS
 - Bootstrap
 - Font Awesome
+- Javascript
 
 ### Tools used:
 
@@ -167,40 +175,25 @@ The team worked cooperatively to take the project from design to final implement
 - Balsamiq (For wireframing)
 - Google Documents (For content consideration)
 - GitHub Projects (For project management)
-- ChatGPT (For name generation and content categorisation/inspiration/code advice)
+- ChatGPT (For content categorisation/inspiration/code advice)
 
 <a id="repository"></a>
 ## Repository and Project Board
 
-- GitHub repository - https://github.com/CyberArchitect777/hackathon1-hackstreetboys-staying-safe-online
-- GitHub project board - https://github.com/users/CyberArchitect777/projects/3/views/1
-- GitHub deployed website - https://cyberarchitect777.github.io/hackathon1-hackstreetboys-staying-safe-online/
+- GitHub repository - https://github.com/Jab90/hackathon2-Java-the-hutt.git
+- GitHub project board - https://github.com/users/Jab90/projects/2/views/1
+- GitHub deployed website - https://jab90.github.io/hackathon2-Java-the-hutt/
 
 <a id="credits"></a>
 ## Credits
 
-Lewis Freeman
-
-- [Source for S.M.A.R.T information](https://www.hurstdrive.herts.sch.uk/e-safety/)
-- [Source for Woman Ignoring Partner image](https://www.psychologs.com/why-do-people-sometimes-ignore-each-other/)
-- [Source for emotional change image](https://www.hrvisionevent.com/content-hub/minimise-emotional-impact-change/man)
-- [Source for living alone image](https://edition.cnn.com/2022/01/12/health/living-alone-men-inflammation-wellness/index.html)
-- [Deleting social media image](https://www.unitestudents.com/the-common-room/health-and-wellbeing/i-deleted-social-media-heres-why-i-think-you-should-too)
-- [cyberbullying.html - How to protect yourself section](https://www.undp.org/kazakhstan/how-protect-yourself-cyberbullying)
-- [Credit for unhappy-phone-user image](https://abcnews.go.com/Technology/science-doomscrolling/story?id=74402415)
-- [For index page background image](https://www.freepik.com/premium-ai-image/person-typing-laptop-dark-room_44329314.htm)
-- YouTube for videos embedded onto site.
-
-Barrie Millar
-
-- Photo by <a href="https://unsplash.com/@brookecagle?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Brooke Cagle</a> on <a href="https://unsplash.com/photos/woman-sitting-on-brown-wooden-chair-while-using-silver-laptop-computer-in-room-WHWYBmtn3_0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-- Photo by <a href="https://unsplash.com/@dell?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dell</a> on <a href="https://unsplash.com/photos/person-using-laptop-on-table-dpbXgTh0Lac?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-- Photo by <a href="https://unsplash.com/@balazsketyi?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Balázs Kétyi</a> on <a href="https://unsplash.com/photos/black-smartphone-b9rPuUQ_YSs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-- Photo by <a href="https://unsplash.com/@danielkorpai?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Daniel Korpai</a> on <a href="https://unsplash.com/photos/space-gray-ipad-pro-A5Z9g4xP6Yw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-Photo by <a href="https://unsplash.com/@detpho?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Francesco</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-cell-phone-on-a-red-surface-1bBCtUAUMFI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-
 Jabbeer Jeerooburkhan
 
-- [Top tips for staying secure online](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online) - Images and content was mainly taken from this website
-- [Shutterstock](https://www.shutterstock.com) for additional images
-- YouTube for videos embedded onto site.
+- Bootstrap
+- Chat GPT
+- Font awesome
+- Youtube (https://www.youtube.com/watch?v=FT7uvchMECs)
+
+Steven Poole 
+
+John Hookes
