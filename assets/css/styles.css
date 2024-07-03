@@ -127,17 +127,18 @@ body {
 
 /* Spinner Container */
 .container {
-    height: 33vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 20px;
   }
   .wheel-container {
     position: relative;
-    width: 20vh;
-    height: 66vh;
+    width: 15vh;
+    height: 15vh;
+    
   }
   
   .wheel {
@@ -162,8 +163,8 @@ body {
   .segment:nth-child(2) { background-color: #FF0000; transform: rotate(60deg); }
   .segment:nth-child(3) { background-color: #008000; transform: rotate(120deg); }
   .segment:nth-child(4) { background-color: #FFA500; transform: rotate(180deg); }
-  .segment:nth-child(5) { background-color: #FFC0CB; transform: rotate(240deg); }
-  .segment:nth-child(6) { background-color: #0000FF; transform: rotate(300deg); }
+  .segment:nth-child(5) { background-color: #964B00; transform: rotate(240deg); }
+  .segment:nth-child(6) { background-color:  hsla(216, 89%, 60%, 0.745); transform: rotate(300deg); }
   
   .marker {
     position: absolute;
@@ -203,14 +204,13 @@ body {
 
 
 /* Responsive Design */
-@media (min-width: 200px) and (max-width: 450px) {
+@media (min-width: 200px) and (max-width: 450px) { */
     #spinner {
-        display: block; /* Show spinner only on small devices */
-    }
+        display: block; 
 }
 
-@media (min-width: 451px) and (max-width: 1260px) {
-    #spinner {
-        display: block; /* Show spinner on medium and larger devices */
-    }
-}
+/* @media (min-width: 451px) and (max-width: 1260px) { */
+    /* #spinner { */
+        display: block; Show spinner on medium and larger devices
+    /* } */
+/* } */
