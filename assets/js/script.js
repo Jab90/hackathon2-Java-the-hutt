@@ -94,7 +94,6 @@ function shuffle(array) {
 };
 
 /**
-<<<<<<< HEAD
  * Js for the spinner wheel
  */
 let currentRotation = 0;
@@ -116,7 +115,6 @@ function spinWheel() {
     currentRotation = currentRotation % 360;
   }, 3000);
 }
-=======
  * 
  */
 function IncrementScore() {
@@ -128,4 +126,3 @@ function IncrementWrongAnswer() {
     let oldScore = parseInt (document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
 }
->>>>>>> dc38c082968e1e73a762f1fd61aeee6b312e35bb
