@@ -91,8 +91,6 @@ function shuffle(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
-<<<<<<< HEAD
-=======
 };
 
 /**
@@ -106,5 +104,4 @@ function IncrementScore() {
 function IncrementWrongAnswer() {
     let oldScore = parseInt (document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
->>>>>>> f44e48c372ac1d140228dc145e332a91620a36ad
 }
