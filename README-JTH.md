@@ -21,18 +21,15 @@ Welcome to Java The Hutt, a website designed to allow users to play a trivia boa
 
 This website was created during Hackathon 2 of the "16 week High-Performance Full Stack Skills Bootcamp" which ranged from 02/07/24 - 04/07/24 (1:30pm). We werent allowed to do any coding until 9am on 02/07/24, however we
 were allowed to explore ideas and get together as a team to discuss what it is we wanted to create. Which was done on the friday and weekend leading into the hackathon (28/06/24 - 01/07/24).
-The requirements of this Hackathon are found [here]
-
-. The requirements of this Hackathon are found [here](/assets/docs/hackathon-1-requirements.pdf).
 
 <a id="instructions"></a>
 ## Instructions and Features
 
-CyberSafe Haven is designed to be intuitive to use and to present information in a clear and easy-to-read way. A navigation bar is placed at the top to help the user to move around the site and a footer can be found at the bottom linking to (virtual) social media pages.
+Java The Hutt game board is desgined to be interactive and a game that can be played either by yourself or with others. The navigation bar at the top is to help the user restart a new game or if they need help or feel the need to contact us they can do so. Theres also a footer at the bottom where you will find links to our (virtual) social media pages.  
 
 ### General style
 
-The site is designed to use high-contrast colours and a neat, professional design. The first page has an attractive styled image with all other pages sporting a black on white style for the main sections. The purpose of this choice is to make it easy for the user to feel engaged by the initial impression and then find the main content areas light and easy-to-read.
+The site overall is designed to have a simplistic look and professional design, whilst having an interactive board game. We've gone for a more simplistic approach so that the user doesn't feel theres too much going on whilst trying to play the game. 
 
 Desktop view of home page:
 
