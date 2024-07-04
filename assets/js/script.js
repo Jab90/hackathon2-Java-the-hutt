@@ -115,8 +115,7 @@ function spinWheel() {
     currentRotation = currentRotation % 360;
   }, 3000);
 }
- * 
- */
+
 function IncrementScore() {
     let oldScore = parseInt (document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
