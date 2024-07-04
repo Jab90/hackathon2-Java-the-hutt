@@ -65,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (selectedAnswer) {
                     const answerText = selectedAnswer.value;
                     const correctAnswer = question.correct_answer;
-<<<<<<< HEAD
                     const isCorrect = answerText === correctAnswer;
                     showFeedback(isCorrect); // Show feedback based on the selected answer
                     if (isCorrect) {
@@ -73,13 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     } else {
                         incrementWrongAnswer();
                     }
-=======
-                    showFeedback(answerText === correctAnswer); // Show feedback based on the selected answer
-                    IncrementScore()
-                }
-                else {
-                    IncrementWrongAnswer ();
->>>>>>> 314308b83a583c98549187ab3a3dd53839570dec
                 }
             });
         });
