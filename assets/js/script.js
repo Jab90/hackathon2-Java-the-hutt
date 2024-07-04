@@ -64,7 +64,10 @@ function displayQuestions(questions) {
                     const answerText = selectedAnswer.value;
                     const correctAnswer = question.correct_answer;
                     showFeedback(answerText === correctAnswer); // Show feedback based on the selected answer
-                   
+                    IncrementScore()
+                }
+                else {
+                    IncrementWrongAnswer ();
                 }
             });
         });
