@@ -94,7 +94,11 @@ function shuffle(array) {
 };
 
 /**
+
  * Js for the spinner wheel
+
+ *  Function to increment score calling score element from 
+
  */
 let currentRotation = 0;
 
@@ -122,6 +126,6 @@ function IncrementScore() {
 }
 
 function IncrementWrongAnswer() {
-    let oldScore = parseInt (document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = ++oldScore;
+    let oldWrongScore = parseInt (document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldWrongScore;
 }
