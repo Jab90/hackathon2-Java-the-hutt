@@ -94,8 +94,32 @@ function shuffle(array) {
 };
 
 /**
+
+ * Js for the spinner wheel
+
  *  Function to increment score calling score element from 
+
  */
+let currentRotation = 0;
+
+function spinWheel() {
+  const wheel = document.getElementById('wheel');
+
+  // Generate a random rotation angle between 1080 (3 rotations) and 1440 (4 rotations)
+  const randomRotation = 1080 + Math.floor(Math.random() * 360);
+  currentRotation += randomRotation;
+
+  wheel.style.transition = 'transform 3s ease-out';
+  wheel.style.transform = `rotate(${currentRotation}deg)`;
+
+  // Reset rotation after spinning
+  setTimeout(() => {
+    wheel.style.transition = 'none';
+    wheel.style.transform = `rotate(${currentRotation % 360}deg)`;
+    currentRotation = currentRotation % 360;
+  }, 3000);
+}
+
 function IncrementScore() {
     let oldScore = parseInt (document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
