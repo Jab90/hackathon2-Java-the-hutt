@@ -208,8 +208,14 @@ body {
 }
 }
 
-/* @media (min-width: 451px) and (max-width: 1260px) { */
-    /* #spinner { */
-        display: block; Show spinner on medium and larger devices
-    /* } */
-/* } */
+/* Scores Color */
+
+#score {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
