@@ -58,13 +58,11 @@ The user is able to access the game on the first page (Home Page) and will also 
 
 The home page you can see is the main star of the show with the board game sitting there. Its quite self explanatory with just playing the game. 
 
-![Top of password security page](/assets/images/docs/password-security-screenshot.png "Top of password security page")
 
 #### Help Page 
 
 The help page has some FAQ's with issues. This page is designed with just some questions that the user may have. 
 
-![Top of email and social media security guide](/assets/images/docs/email-social-page-screenshot.png "Top of email and social media security guide")
 
 #### Contact Us Page 
 
