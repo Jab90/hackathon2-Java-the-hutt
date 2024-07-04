@@ -33,7 +33,7 @@ The site overall is designed to have a simplistic look and professional design, 
 
 Desktop view of home page:
 
-![Full cover page in desktop view](/assets/images/docs/cover-desktop.png "Full cover page in desktop view")
+![Full cover page in desktop view](/assets/images/docs/desktop.png "Full cover page in desktop view")
 
 Mobile view of home page: 
 
